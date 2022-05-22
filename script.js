@@ -40,4 +40,8 @@ document.querySelector(".search-bar").addEventListener("keyup", event => {
   }
 });
 
+document.getElementById("btn").addEventListener("click", () => {
+  document.querySelector(".search-bar").value = "";
+});
+
 weather.fetchWeather("Szczecin");
