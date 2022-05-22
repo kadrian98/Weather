@@ -1,0 +1,64 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background-color: #222;
+  font-family: "Lato", sans-serif;
+  background-image: url("https://source.unsplash.com/1600x900/?landscape");
+}
+
+.card {
+  background-color: #000;
+  color: #fff;
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 420px;
+  opacity: 1;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input {
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-radius: 18px;
+  background-color: #7c7c7c7c;
+  color: #fff;
+  font-family: inherit;
+  font-size: 120%;
+}
+
+button {
+  margin: 0.5rem;
+  border-radius: 50%;
+  border: none;
+  height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+button:hover {
+  background-color: #c7c7c72b;
+}
+
+.weather.loading {
+  visibility: hidden;
+  position: relative;
+  max-height: 20px;
+}
+
+.weather.loading {
+  visibility: visible;
+  content: "Loading...";
+  color: #fff;
+  position: absolute;
+  top: 0;
+}
