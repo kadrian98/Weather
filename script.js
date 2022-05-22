@@ -5,7 +5,8 @@ let weather = {
       "https://api.openweathermap.org/data/2.5/weather?q=" +
         city +
         "&units=metric&lat=35&lon=139&appid=" +
-        this.apiKey
+        this.apiKey +
+        "&lang=pl"
     )
       .then(response => response.json())
       .then(data => this.displayWeather(data));
@@ -21,8 +22,9 @@ let weather = {
     document.querySelector(".description").innerText = description;
     document.querySelector(".temp").innerText = temp + "°C";
     document.querySelector(".humidity").innerText =
-      "Humidity: " + humidity + "%";
-    document.querySelector(".wind").innerText = "Wind speed: " + speed + "km/h";
+      "Wilgotność: " + humidity + "%";
+    document.querySelector(".wind").innerText =
+      "Prękość wiatru: " + speed + "km/h";
     document.querySelector(".weather").classList.remove("loading");
   },
   search: function () {
