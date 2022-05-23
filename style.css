@@ -7,7 +7,7 @@ body {
   margin: auto;
   background-color: #222;
   font-family: "Lato", sans-serif;
-  background-image: url("https://source.unsplash.com/1600x900/?landscape");
+  background-image: url("https://source.unsplash.com/1600x900/?tenerife");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -66,4 +66,21 @@ button:hover {
   color: #fff;
   position: absolute;
   top: 0;
+}
+
+.counter {
+  margin: 0.5rem 0;
+  padding: 0;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: auto;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem 0;
+  opacity: 0.8;
 }

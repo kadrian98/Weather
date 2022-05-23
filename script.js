@@ -16,11 +16,13 @@ let weather = {
     const { icon, description } = data.weather[0];
     const { temp, humidity } = data.main;
     const { speed } = data.wind;
-    document.querySelector(".city").innerHTML = "Weather in " + name;
+    const tempToShow = Math.trunc(temp);
+
+    document.querySelector(".city").innerHTML = "Pogoda w " + name;
     document.querySelector(".icon").src =
       "https://openweathermap.org/img/wn/" + icon + ".png";
     document.querySelector(".description").innerText = description;
-    document.querySelector(".temp").innerText = temp + "°C";
+    document.querySelector(".temp").innerText = tempToShow + "°C";
     document.querySelector(".humidity").innerText =
       "Wilgotność: " + humidity + "%";
     document.querySelector(".wind").innerText =
@@ -47,4 +49,4 @@ document.getElementById("btn").addEventListener("click", () => {
   document.querySelector(".search-bar").value = "";
 });
 
-weather.fetchWeather("Szczecin");
+weather.fetchWeather("Santa Cruz de Tenerife");
