@@ -10,6 +10,7 @@ body {
   background-image: url("https://source.unsplash.com/1600x900/?tenerife");
   background-repeat: no-repeat;
   background-position: center;
+  flex-wrap: wrap;
 }
 
 .card {
